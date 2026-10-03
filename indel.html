@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="mailcontainer">
+        <div class="darkmode">
+            <h2>calc</h2>
+            <div class="themeDiv">
+                <p class="themeP">THEME</p>
+                <div class="checkDiv">
+                    <div class="numDiv">
+                        <label for="number" class="num1"> 1</label>
+                        <label for="number" class="num2"> 2</label>
+                    </div>
+                    <div class="checktoggle">
+                        <button type="button" id="togglebtn"><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input id="answer" readonly></input>
+        <div class="calBody">
+            <div class="rowOneDiv">
+                <button class="button" onclick="appendToDisplay('7')">7</button>
+                <button class="button" onclick="appendToDisplay('8')">8</button>
+                <button class="button" onclick="appendToDisplay('9')">9</button>
+                <button onclick="cleardisplay()" class="dell">DEL</button>
+            </div>
+            <div class="rowOneDiv rowtwoDiv">
+                <button class="button" onclick="appendToDisplay('4')">4</button>
+                <button class="button" onclick="appendToDisplay('5')">5</button>
+                <button class="button" onclick="appendToDisplay('6')">6</button>
+                <button class="button" onclick="appendToDisplay('+')">+</button>
+            </div>
+            <div class="rowOneDiv rowthreeDiv ">
+                <button id="button" onclick="appendToDisplay('1')">1</button>
+                <button class="button" onclick="appendToDisplay('2')">2</button>
+                <button class="button" onclick="appendToDisplay('3')">3</button>
+                <button class="button" onclick="appendToDisplay('-')">-</button>
+            </div>
+            <div class="rowOneDiv rowfourDiv">
+                <button id="button" onclick="appendToDisplay('.')">.</button>
+                <button id="button" onclick="appendToDisplay('0')">0</button>
+                <button class="button" onclick="appendToDisplay('/')">/</button>
+                <button class="button" onclick="appendToDisplay('* ')">*</button>
+            </div>
+            <div class="rowOneDiv rowfivwDiv">
+                <button onclick="reset()" class="dell">RESET</button>
+                <button onclick="calculate()" class="equalTo">=</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
